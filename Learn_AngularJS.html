@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learn AngularJS</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+
+	<body ng-app="LetsAngular" ng-controller="calculator">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-3 text-center card">
+					<h2 class="primary">Calculator using AngularJS</h2>
+					<input type="text" class="form-control" ng-model="num1" required placeholder="Number 1"/>
+					<input type="text" class="form-control" ng-model="num2" required placeholder="Number 2"/>
+					<p>Select operation:</p>
+					<p>
+						<button id="ad" class="btn btn-default active" ng-click="add()"><i class="glyphicon glyphicon-plus"></i></button>
+						<button id="su" class="btn btn-default active" ng-click="sub()"><i class="glyphicon glyphicon-minus"></i></button>
+						<button id="mu" class="btn btn-default active" ng-click="mul()"><i class="glyphicon glyphicon-asterisk"></i></button>
+						<button id="di" class="btn btn-default active" ng-click="divide()"><i class="glyphicon"><b>/</b></i></button>	
+					</p>
+					
+					<h4 class="">Result:{{result}}</h4>
+				</div>
+			</div>
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<script src="one.js"></script>
+	</body>
+</html>
